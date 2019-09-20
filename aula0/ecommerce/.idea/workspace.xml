@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="91310747-84ea-4675-9ea2-d93a6c439e43" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ecommerce" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Namespace" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1R0nFX8ejYuIBK6frBkjD4yOhZu" />
+  <component name="PropertiesComponent">
+    <property name="cursive.last.file.extension./Users/aluralaranja/Documents/Guilherme/datomic1-introducao/projeto/ecommerce/src" value="clj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="ReplState" timestamp="1568892750488">{:repl-history {:ide [], :local [{:command &quot;(pprint db/schema)&quot;, :offset 18, :ns &quot;ecommerce.core&quot;} {:command &quot;(d/transact conn {:tx-data db/schema})&quot;, :offset 38, :ns &quot;ecommerce.core&quot;} {:command &quot;(pprint (d/create-database db-uri))&quot;, :offset 35, :ns &quot;ecommerce.db&quot;} {:command &quot;(def movie-schema [{:db/ident :movie/title\n                    :db/valueType :db.type/string\n                    :db/cardinality :db.cardinality/one\n                    :db/doc \&quot;The title of the movie\&quot;}\n\n                   {:db/ident :movie/genre\n                    :db/valueType :db.type/string\n                    :db/cardinality :db.cardinality/one\n                    :db/doc \&quot;The genre of the movie\&quot;}\n\n                   {:db/ident :movie/release-year\n                    :db/valueType :db.type/long\n                    :db/cardinality :db.cardinality/one\n                    :db/doc \&quot;The year the movie was released in theaters\&quot;}])&quot;, :offset 638, :ns &quot;ecommerce.core&quot;} {:command &quot;(d/transact conn {:tx-data movie-schema})&quot;, :offset 41, :ns &quot;ecommerce.core&quot;} {:command &quot;(d/transact conn movie-schema)&quot;, :offset 30, :ns &quot;ecommerce.core&quot;} {:command &quot;(d/delete-database db-uri)&quot;, :offset 26, :ns &quot;ecommerce.db&quot;} {:command &quot;(require '[datomic.api :as d])&quot;, :offset 30, :ns &quot;ecommerce.core&quot;} {:command &quot;(def db-uri \&quot;datomic:dev://localhost:4334/hello\&quot;)&quot;, :offset 49, :ns &quot;ecommerce.core&quot;} {:command &quot;(d/create-database db-uri)&quot;, :offset 26, :ns &quot;ecommerce.core&quot;} {:command &quot;(pprint conn)&quot;, :offset 13, :ns &quot;ecommerce.core&quot;} {:command &quot;(d/transact conn db/schema)&quot;, :offset 27, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [computador (model/novo-produto \&quot;Computador Novo\&quot;, \&quot;/computador_novo\&quot;, 2500.10)]\n  (d/transact conn [computador]))&quot;, :offset 119, :ns &quot;ecommerce.core&quot;} {:command &quot;(d/q '[:find  ?entidade\n       :where [?entidade :produto/nome]] conn)&quot;, :offset 70, :ns &quot;ecommerce.core&quot;} {:command &quot;(d/q '[:find  ?entidade\n       :where [?entidade :produto/nome]] db)&quot;, :offset 68, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [radio-relogio {:produto/nome \&quot;Rádio com relógio\&quot; :produto/slug nil}]\n  (d/transact conn [radio-relogio]))&quot;, :offset 111, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)]\n  (pprint (d/transact conn [celular-barato])))&quot;, :offset 137, :ns &quot;ecommerce.core&quot;} {:command &quot;(defn apaga-banco []\n  (d/delete-database db-uri))&quot;, :offset 50, :ns &quot;ecommerce.db&quot;} {:command &quot;(ns ecommerce.core\n  (:use clojure.pprint)\n  (:require [datomic.api :as d]\n            [ecommerce.db :as db]\n            [ecommerce.model :as model]))&quot;, :offset 150, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [computador (model/novo-produto \&quot;Computador Novo\&quot;, \&quot;/computador_novo\&quot;, 2500.10M)]\n  (d/transact conn [computador]))&quot;, :offset 120, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular (model/novo-produto \&quot;Celular Caro\&quot;, \&quot;/celular\&quot;, 888888.10M)]\n  (d/transact conn [celular]))&quot;, :offset 105, :ns &quot;ecommerce.core&quot;} {:command &quot;(def db (d/db conn))&quot;, :offset 20, :ns &quot;ecommerce.core&quot;} {:command &quot;(d/q '[:find ?entidade\n       :where [?entidade :produto/nome]] db)&quot;, :offset 67, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [calculadora {:produto/nome \&quot;Calculadora com 4 operações\&quot;}]\n  (d/transact conn [calculadora]))&quot;, :offset 99, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)\n      resultado (d/transact conn [celular-barato])\n      ]\n  (pprint (:val resultado)))&quot;, :offset 177, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)\n      resultado (d/transact conn [celular-barato])\n      ]\n  (pprint (:val tempids)))&quot;, :offset 175, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)\n      resultado (d/transact conn [celular-barato])\n      ]\n  (pprint (:tempids resultado)))&quot;, :offset 181, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)]\n  (let [resultado (d/transact conn [celular-barato])]))&quot;, :offset 146, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)]\n  (d/transact conn [celular-barato]))&quot;, :offset 128, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)\n      resultado @(d/transact conn [celular-barato])]\n  (pprint resultado)\n  )&quot;, :offset 167, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)\n      resultado @(d/transact conn [celular-barato])]\n  (pprint (first (vals (:tempids resultado))))\n  )&quot;, :offset 193, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)\n      resultado @(d/transact conn [celular-barato])]\n  (pprint resultado)\n  (pprint (first (vals (:tempids resultado))))\n  )&quot;, :offset 214, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)\n      resultado @(d/transact conn [celular-barato])\n      id-entidade  (first (vals (:tempids resultado)))]\n  (pprint resultado)\n  (pprint @(d/transact conn [[:db/add id-entidade :produto/preco 0.1M]]))\n  )&quot;, :offset 296, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)\n      resultado @(d/transact conn [celular-barato])\n      id-entidade  (first (vals (:tempids resultado)))]\n  (pprint resultado)\n  (pprint @(d/transact conn [[:db/add id-entidade :produto/preco 0.1M]]))\n  (pprint @(d/transact conn [[:db/retract id-entidade :produto/slug \&quot;/celular-barato\&quot;]])))&quot;, :offset 383, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 888888.10M)\n      resultado @(d/transact conn [celular-barato])\n      id-entidade  (-&gt; resultado :tempids vals first)]\n  (pprint resultado)\n  (pprint @(d/transact conn [[:db/add id-entidade :produto/preco 0.1M]]))\n  (pprint @(d/transact conn [[:db/retract id-entidade :produto/slug \&quot;/celular-barato\&quot;]])))&quot;, :offset 382, :ns &quot;ecommerce.core&quot;} {:command &quot;(ns ecommerce.aula3\n  (:use clojure.pprint)\n  (:require [datomic.api :as d]\n            [ecommerce.db :as db]\n            [ecommerce.model :as model]))&quot;, :offset 151, :ns &quot;ecommerce.core&quot;} {:command &quot;(let [computador (model/novo-produto \&quot;Computador Novo\&quot;, \&quot;/computador_novo\&quot;, 2500.10M)\n      celular (model/novo-produto \&quot;Celular Caro\&quot;, \&quot;/celular\&quot;, 888888.10M)\n      calculadora {:produto/nome \&quot;Calculadora com 4 operações\&quot;}\n      celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 0.1M)]\n  (d/transact conn [computador, celular, calculadora, celular-barato]))&quot;, :offset 380, :ns &quot;ecommerce.aula3&quot;} {:command &quot;(def conn (db/abre-conexao))&quot;, :offset 28, :ns &quot;ecommerce.aula3&quot;} {:command &quot;(let [computador (model/novo-produto \&quot;Computador Novo\&quot;, \&quot;/computador-novo\&quot;, 2500.10M)\n      celular (model/novo-produto \&quot;Celular Caro\&quot;, \&quot;/celular\&quot;, 888888.10M)\n      calculadora {:produto/nome \&quot;Calculadora com 4 operações\&quot;}\n      celular-barato (model/novo-produto \&quot;Celular Barato\&quot;, \&quot;/celular-barato\&quot;, 0.1M)]\n  (d/transact conn [computador, celular, calculadora, celular-barato]))&quot;, :offset 380, :ns &quot;ecommerce.aula3&quot;} {:command &quot;(pprint (db/todos-os-produtos-por-slug-fixo (d/db conn)))&quot;, :offset 57, :ns &quot;ecommerce.aula3&quot;} {:command &quot;(defn todos-os-slugs [db]\n  (d/q '[:find ?produto, ?slug\n         :where [?produto :produto/slug ?slug]] db))&quot;, :offset 109, :ns &quot;ecommerce.db&quot;} {:command &quot;(pprint (db/todos-os-slugs (d/db conn)))&quot;, :offset 40, :ns &quot;ecommerce.aula3&quot;} {:command &quot;(pprint (db/todos-os-produtos-por-slug (d/db conn) \&quot;/computador-novo\&quot;))&quot;, :offset 71, :ns &quot;ecommerce.aula3&quot;} {:command &quot;(pprint (db/todos-os-produtos-por-preco (d/db conn) 1000))&quot;, :offset 58, :ns &quot;ecommerce.aula3&quot;} {:command &quot;(pprint (count (db/todos-os-produtos-por-preco (d/db conn))))&quot;, :offset 61, :ns &quot;ecommerce.aula3&quot;} {:command &quot;(pprint (db/todos-os-produtos-por-preco (d/db conn)))&quot;, :offset 53, :ns &quot;ecommerce.aula3&quot;} {:command &quot;(pprint (count (db/todos-os-produtos (d/db conn))))&quot;, :offset 51, :ns &quot;ecommerce.aula5&quot;} {:command &quot;(pprint (count (db/todos-os-produtos (db-as-of (d/db conn) #inst \&quot;2019-09-18T17:35:34.200\&quot;))))&quot;, :offset 94, :ns &quot;ecommerce.aula5&quot;} {:command &quot;(pprint (count (db/todos-os-produtos (d/as-of (d/db conn) #inst \&quot;2019-09-18T17:35:34.200\&quot;))))&quot;, :offset 93, :ns &quot;ecommerce.aula5&quot;} {:command &quot;(pprint (count (db/todos-os-produtos (d/as-of (d/db conn) #inst \&quot;2019-09-18T17:34:34.200\&quot;))))&quot;, :offset 93, :ns &quot;ecommerce.aula5&quot;} {:command &quot;(pprint (count (db/todos-os-produtos (d/as-of (d/db conn) #inst \&quot;2019-09-18T17:36:34.200\&quot;))))&quot;, :offset 93, :ns &quot;ecommerce.aula5&quot;} {:command &quot;(db/todos-os-produtos-por-preco (d/db conn))&quot;, :offset 44, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(db/todos-os-produtos-por-preco (d/db conn) 1000)&quot;, :offset 49, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(pprint (count (db/todos-os-produtos-por-preco (d/db conn) 1000)))&quot;, :offset 66, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(pprint (count (db/todos-os-produtos-por-preco (d/db conn) 5000)))&quot;, :offset 66, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(db/cria-schema conn)&quot;, :offset 21, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(db/apaga-banco)&quot;, :offset 16, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(d/transact conn [[:db/add 17592186045418 :produto/palavra-chave \&quot;desktop\&quot;]\n                  [:db/add 17592186045418 :produto/palavra-chave \&quot;computador\&quot;]])&quot;, :offset 156, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(pprint (db/todos-os-produtos))&quot;, :offset 31, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(d/transact conn [[:db/retract 17592186045418 :produto/palavra-chave \&quot;computador\&quot;]])&quot;, :offset 84, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(d/transact conn [[:db/add 17592186045418 :produto/palavra-chave \&quot;monitor preto e branco\&quot;]])&quot;, :offset 92, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(d/transact conn [[:db/add 17592186045419 :produto/palavra-chave \&quot;celular\&quot;]\n                  [:db/add 17592186045421 :produto/palavra-chave \&quot;celular\&quot;]])&quot;, :offset 153, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(pprint (db/todos-os-produtos (d/db conn)))&quot;, :offset 43, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(pprint (db/todos-os-produtos-por-palavra-chave (d/db conn) \&quot;celular\&quot;))&quot;, :offset 71, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(pprint (db/todos-os-produtos-por-palavra-chave (d/db conn) \&quot;computador\&quot;))&quot;, :offset 74, :ns &quot;ecommerce.aula6&quot;} {:command &quot;(pprint (db/todos-os-produtos-por-palavra-chave (d/db conn) \&quot;monitor preto e branco\&quot;))&quot;, :offset 86, :ns &quot;ecommerce.aula6&quot;}], :remote []}}</component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="REPL for ecommerce" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="ecommerce" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <module name="" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="0" />
+      <module name="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Clojure REPL.REPL for ecommerce" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91310747-84ea-4675-9ea2-d93a6c439e43" name="Default Changelist" comment="" />
+      <created>1568812777721</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568812777721</updated>
+    </task>
+    <servers />
+  </component>
+</project>
